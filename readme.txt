@@ -3,13 +3,14 @@ Contributors: mypacecreator
 Donate link: http://www.amazon.co.jp/registry/wishlist/33HK9YOKDESUO
 Tags: SEO, meta, robots
 Requires at least: 4.1
-Tested up to: 4.4
-Stable tag: 1.1
+Tested up to: 4.6.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
+Description: This plugin allows you to edit the meta robots tag at every singular post(posts, pages, custom post types). This is a very simple plugin.
 
 
 
@@ -21,6 +22,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Frequently Asked Questions ==
+
+Not Yet.
 
 
 
@@ -36,4 +39,4 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == GitHub ==
 
-https://github.com/mypacecreator/
+https://github.com/mypacecreator/mypace-custom-meta-robots
