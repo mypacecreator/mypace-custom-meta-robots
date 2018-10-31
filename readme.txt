@@ -34,6 +34,10 @@ Not Yet.
 
 == Changelog ==
 
+= 1.1.1 =
+* GlotPress Compatibility.
+* Tested up to 5.0
+
 = 1.1 =
 * Fixed problems with saving data on custom post types.
 

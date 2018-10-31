@@ -3,7 +3,7 @@
  * Plugin Name: mypace Custom Meta Robots
  * Plugin URI: https://github.com/mypacecreator/mypace-custom-meta-robots
  * Description: This plugin allows you to edit meta robots tag at every singular post(posts, pages, custom post types). This is a very simple plugin.
- * Version: 1.1
+ * Version: 1.1.1
  * Author: Kei Nomura (mypacecreator)
  * Author URI: http://mypacecreator.net/
  * Text Domain: mypace-custom-meta-robots
@@ -12,7 +12,7 @@
  * @package Mypace_Custom_Meta_Robots
  */
 
-if ( !class_exists( 'Mypace_Custom_Meta_Robots' ) ){
+if ( !class_exists( 'Mypace_Custom_Meta_Robots' ) ) {
 	/**
 	 * Class Mypace_Custom_Meta_Robots
 	 */
@@ -29,7 +29,7 @@ if ( !class_exists( 'Mypace_Custom_Meta_Robots' ) ){
 			add_filter( 'wp_head',                         array( $this, 'custom_meta_robots' ) );
 			add_action( 'admin_print_styles-post.php',     array( $this, 'robots_meta_box_styles' ) );
 			add_action( 'admin_print_styles-post-new.php', array( $this, 'robots_meta_box_styles' ) );
-			load_plugin_textdomain( 'mypace-custom-meta-robots', false, basename( dirname( __FILE__ ) ) . '/languages' );
+			load_plugin_textdomain( 'mypace-custom-meta-robots' );
 		}
 
 		/**
@@ -57,7 +57,7 @@ if ( !class_exists( 'Mypace_Custom_Meta_Robots' ) ){
 		 */
 		public function robots_meta_box(){
 			wp_nonce_field( plugin_basename(__FILE__), 'mypace_robots_meta_noncename' );
-			$field_name = 'mypace_robots_meta';
+			$field_name  = 'mypace_robots_meta';
 			$field_value = get_post_meta( get_the_ID(), $field_name, true );
 		?>
 
